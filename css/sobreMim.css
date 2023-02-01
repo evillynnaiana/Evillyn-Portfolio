@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family= Tangerine: wght @700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-texto: ##7fff00;
+  --cor-hover: linear-gradient(to right, #7fff00, #e4e4e4);
+}
+
+/* conteudo-cabecalho */
+#titulo {
+  font-family: 'Aboreto';
+  color: #7fff00;
+  text-align: center;
+  font-size: 5vmin;
+  cursor: pointer;
+}
+
+#titulo-card {
+  font-family: 'Aboreto';
+  color: #7fff00;
+  font-size: 3vmin;
+}
+
+#botao-menu,
+#botao-video {
+  color: #7fff00;
+  font-size: 20px;
+}
+
+.botoes-sites {
+  background-color: #7fff00;
+}
+
+.menu {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-home {
+  text-decoration: none;
+  color: #7fff00;
+  font-size: 3vmin;
+  font-family: 'Aboreto';
+  margin: 25px;
+}
+
+.conteudo-menu {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.links {
+  font-size: 5vmin;
+  font-family: 'Explora', cursive;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.links::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-hover);
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.35s;
+}
+.cabecalho {
+  height: 10vh;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px #7fff00;
+  display: flex;
+  padding: 26px;
+  cursor: pointer;
+}
+
+.links:hover::before {
+  scale: 1;
+}
+
+/* .conteudo-principal */
+
+body {
+  background-color: black;
+  background-origin: border-box;
+}
+
+#card-video {
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+
+#video-eu {
+  border-radius: 0px 20px 0px 20px;
+  font-family: 'Aboreto';
+  background-color: rgba(0, 0, 0, 0.808);
+  box-shadow: 2px 2px 2px 2px #7fff00;
+}
+
+.linha-gradiente {
+  height: 3px;
+  width: 60%;
+  background: var(--cor-hover);
+  margin-top: 5px;
+}
+
+#imagem-eu {
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 20px 0px 20px;
+  padding: 10px;
+}
+.link-home:hover {
+  color: #1c1c1c;
+  text-decoration: none;
+  opacity: 5s;
+}
+.logo-educacao {
+  width: 20%;
+}

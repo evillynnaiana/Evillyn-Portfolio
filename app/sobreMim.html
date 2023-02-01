@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sobreMim.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css" />
+
+    <title>Sobre Mim</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <div class="menu">
+            <a href="../index.html" class="link-home"><span uk-icon="home"></span>Home</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteudo-menu">
+            <div class="links">
+                <h1 id="titulo">About Me</h1>
+            </div>
+            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay"
+                id="botao-menu">Open</button>
+
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+                    <h3>Title</h3>
+
+                    <p>Meu nome é Evillyn Naiane, tenho 20 anos e sou natural de Laranjeiras do Sul. 
+                        Moro em Guarapuava a uns 5 anos, sou muito animada e interativa, além de muito determinada. 
+                    </p>
+                    <h3>Formação</h3>
+                    <img src="/imagens/logo-colegio.png" alt="logo" class="logo-educacao">
+                    <p>Ensino Médio técnico completo: 
+Visconde de Guarapuava, curso técnico magistério. 
+</p>
+                <img src="/imagens/logo-utfpr.png" alt="logo" class="logo-educacao">
+                <p>Ensino Superior:
+ (cursando 2º período) Universidade Tecnológica 
+Federal do Paraná (UTFPR) - Sistemas para 
+Internet. </p>
+                <h3>Certificações</h3>
+                <p> Rádio Comunicação; <br>
+ Excel Avançado; <br>
+ Qualificação Imediata; <br>
+ Conhecimento avançado HTML; <br>
+ Conhecimento intermediário CSS; <br>
+ Conhecimento básico Java Script; - <br>
+ Conhecimento intermediário plataforma 
+SAP. <br>
+ Conhecimento no aplicativo Dbeaver. <br>
+ Figma; <br>
+ Java; <br>
+ Bootstrap/Materialize; <br>
+ Git/Git Hub.<br> </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-overflow-hidden" id="imagem-eu">
+            <img src="/imagens/capa.jpg" width="500" height="100" alt="Example image"
+                class="uk-animation-reverse uk-transform-origin-top-right"
+                uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+        </div>
+
+        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid id="card-video">
+            <div>
+                <div class="uk-card uk-card-default uk-card-body"
+                    uk-scrollspy="cls: uk-animation-slide-left; repeat: true" id="video-eu">
+                    <h3 class="uk-card-title" id="titulo-card">Evillyn</h3>
+                    <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +"
+                        id="botao-video">Demostrativo
+                        Video</button>
+
+                    <video src="/imagens/apresentacao.mp4" width="1920" height="1080" controls playsinline hidden
+                        uk-video></video>
+                    
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="/js/sobreMim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
+
+
+</body>
+
+
+</html>

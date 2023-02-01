@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family= Tangerine: wght @700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --var-main: #b4ada34d;
+  --cor-hover: linear-gradient(to right, #af9f56da, #000000b7, #af9f56da);
+  --cor-texto: #7d7036;
+}
+
+/* cabecalho */
+.titulo {
+  margin: 60px auto;
+  font-family: 'Tangerine', Courier, monospace;
+  color: #7fff00;
+  text-align: center;
+  font-size: 6vmin;
+}
+
+.linha-gradiente {
+  height: 3px;
+  width: 60%;
+  background: var(--cor-hover);
+  margin-top: 5px;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.texto-divisorias {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 3vmin;
+  font-family: 'Aboreto';
+  margin: 25px;
+}
+
+.link-home {
+  text-decoration: none;
+  color: #7fff00;
+  font-size: 3vmin;
+  font-family: 'Aboreto';
+  margin: 25px;
+}
+
+.link-home:hover {
+  color: #1c1c1c;
+  text-decoration: none;
+  opacity: 5s;
+}
+
+.links {
+  font-size: 5vmin;
+  font-family: 'Aboreto', cursive;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.links::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-hover);
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.35s;
+}
+p {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.links:hover::before {
+  scale: 1;
+}
+
+.limitador {
+  padding: 30px;
+}
+#texto-excel,
+#telas {
+  color: #7fff00;
+  cursor: pointer;
+  font-family: 'Aboreto';
+  padding: 20px;
+  text-align: end;
+}
+#texto-excel:hover {
+  opacity: 2s;
+  color: #1c1c1c;
+}
+#telas:hover {
+  opacity: 2s;
+  color: #1c1c1c;
+}
+/* body*/
+body {
+  background-image: url(/imagens/profissional/fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* conteudo principal */
+#system,
+#oee,
+#farmacia {
+  border-radius: 0px 20px 0px 20px;
+  font-family: 'Aboreto';
+  background-color: rgba(0, 0, 0, 0.808);
+  box-shadow: 1px 1px 1px 1px #7fff00;
+}
+#ordem,
+#sistema,
+#farma {
+  color: #7fff00;
+}
+
+/* carrosel */
+.tamanho-img {
+  width: 400px !important;
+  height: 200px !important;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+.fotos {
+  padding: 10px;
+  padding: 10px;
+  display: grid;
+  grid-gap: 24px;
+}
+/* responsividade card video excel*/
+@media (max-width: 910px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .system {
+    gap: 10px;
+  }
+}

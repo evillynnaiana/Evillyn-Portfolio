@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family= Tangerine: wght @700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-nav: #000;
+  --cor-hover: linear-gradient(to right, #7fff00, #e4e4e4);
+  --cor-texto: #7d7036;
+}
+
+/* cabecalho */
+.menu {
+  padding: 10px;
+}
+
+.link-home {
+  text-decoration: none;
+  color: #7fff00;
+  font-size: 3vmin;
+  font-family: 'Aboreto';
+  margin: 25px;
+}
+.link-home:hover {
+  color: #1c1c1c;
+  text-decoration: none;
+  opacity: 5s;
+}
+
+.titulo-profissional {
+  color: #7fff00;
+  font-family: 'Aboreto';
+}
+.parallax {
+  background-image: url(/imagens/profissional/fundo.png);
+  min-height: 350px;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.linha_gradiente {
+  height: 3px;
+  width: 60%;
+  background: var(--cor-hover);
+  margin-top: 5px;
+}
+
+/* conteudo-menu */
+.conteudo-menu {
+  display: grid;
+  justify-content: center;
+  height: 23vh;
+  align-items: center;
+  color: #7d7036;
+  cursor: grab;
+  font-size: 2vmin;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+  background: #1c1c1c;
+  box-shadow: 5px 5px 5px 5px #7fff00;
+}
+#kuba-logo {
+  width: 15%;
+}
+
+.card_principal .linha_gradiente {
+  width: 50%;
+}
+
+.card img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: 500ms linear;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  border-radius: 8px;
+  width: 35%;
+  height: 30vh;
+  box-shadow: 2px 2px 2px 2px #1c1c1c;
+}
+
+.card_1 {
+  display: grid;
+
+  background: #00000091;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+
+  width: 50%;
+
+  border-radius: 0px 20px 0px 20px;
+  font-family: 'Aboreto';
+  box-shadow: 2px 2px 2px 2px #7fff00;
+}
+.card_1 img {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.descricao {
+  font-size: 2.5vmin;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img-logo {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.posicao {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+/* rodape */
+
+footer {
+  background-image: url(/imagens/profissional/fundo.png);
+  min-height: 350px;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7fff00;
+  font-style: italic;
+  font-size: 2vmin;
+}
+
+/* responsividade */
+
+@media (max-width: 830px) {
+  .posicao {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .card_1 {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 683px) {
+  .slide-container {
+    width: 100%;
+  }
+
+  .card,
+  .card_1 {
+    width: 100%;
+  }
+}
